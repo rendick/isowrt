@@ -28,6 +28,7 @@ echo ""
 sleep 0.5
 
 lsblk
+
 function usb() {
     echo ""
     read -p "Enter your USB drive name: " usbdrive
