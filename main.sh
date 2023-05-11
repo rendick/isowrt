@@ -6,6 +6,11 @@ none="\e[0m"
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+ls ~/
+
+sleep 0.5
+
+echo ""
 read -p "${bold}Enter the folder where the iso is located (The folder must be in $HOME)${normal}: " fullname
 echo -e "${bold}Folder: ${red}/home/$USER/${fullname}${none}${normal}"
 
@@ -35,6 +40,7 @@ function usb() {
     echo ""
     read -e -p "Your flash drive: /dev/${usbdrive} " choice
 }
+
 usb
 
 # Use a while loop to repeat the prompt until the user selects "yes"
