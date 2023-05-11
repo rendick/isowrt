@@ -4,7 +4,7 @@ Easy way to burn a bootable flash drive with ISO.
 
 # Available OS
 
-**All GNU/Linux and BSD distros**
+**All UNIX systens are supported.**
 
 # Install
 
