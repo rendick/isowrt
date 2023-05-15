@@ -38,7 +38,7 @@ function usb() {
     echo ""
     read -p "Enter your USB drive name: " usbdrive
     echo ""
-    read -e -p "Your flash drive: /dev/${usbdrive} " choice
+    read -e -p "Your flash drive: /dev/${usbdrive} (yes or not)" choice
 }
 
 usb
