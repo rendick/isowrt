@@ -52,4 +52,6 @@ while [ "$choice" != "yes" ]; do
     fi
 done
 
+echo "Wait..."
+
 sudo dd if=${file} of=/dev/${usbdrive} bs=4M status=progress && sync
