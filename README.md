@@ -2,7 +2,7 @@
 
 Easy way to burn a bootable flash drive with ISO.
 
-[Rust version](https://gitlab.com/rendick/isowrt/)
+[Rust version](https://github.com/rendick/isowrt-rs/)
 
 # Available OS
 
