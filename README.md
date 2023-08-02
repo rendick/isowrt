@@ -2,8 +2,6 @@
 
 Easy way to burn a bootable flash drive with ISO.
 
-[Rust version](https://github.com/rendick/isowrt-rs/)
-
 # Available OS
 
 **All UNIX systems are supported.**
@@ -18,10 +16,6 @@ chmod +x isowrt.sh
 ```
 
 **Soon I will make a PKGBUILD file for Arch-based distributions.**
-
-# Goal
-
-Rewrite this script in Rust for more speed and features
 
 # License
 
