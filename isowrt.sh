@@ -38,13 +38,13 @@ function usb() {
     echo ""
     read -p "Enter your USB drive name: " usbdrive
     echo ""
-    read -e -p "Your flash drive: /dev/${usbdrive} (yes or no) " choice
+    read -e -p "Your flash drive: /dev/${usbdrive} (y or n) " choice
 }
 
 usb
 
-while [ "$choice" != "yes" ]; do
-    if [ "$choice" = "no" ]; then
+while [ "$choice" != "y" ]; do
+    if [ "$choice" = "n" ]; then
         echo "you select no"
         sleep 1
         usb
