@@ -6,7 +6,7 @@ none="\e[0m"
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-ls ~/
+find /home/$USER/ -maxdepth 1 -type d
 
 sleep 0.5
 
