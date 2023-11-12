@@ -6,20 +6,11 @@ none="\e[0m"
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-find /home/$USER/ -maxdepth 1 -type d
-
-sleep 0.5
+files=$(find ~/ -type f -name "*.iso" -o -type d -name ".*.iso")
 
 echo ""
-read -p "${bold}Enter the folder where the iso is located (The folder must be in $HOME)${normal}: " fullname
-echo -e "${bold}Folder: ${red}/home/$USER/${fullname}${none}${normal}"
-
-files=(~/${fullname}/*.iso)
-
-# Prompt the user to select a file
 echo "Select a file:"
 select file in "${files[@]}"; do
-    # Check if a valid option was selected
     if [[ -n $file ]]; then
         echo "You selected: $file"
         break
@@ -32,7 +23,7 @@ echo ""
 
 sleep 0.5
 
-lsblk
+lsblk -d | awk '/ 8:/'
 
 function usb() {
     echo ""
