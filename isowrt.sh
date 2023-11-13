@@ -6,7 +6,7 @@ none="\e[0m"
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-files=$(find ~/ -type f -name "*.iso" -o -type d -name ".*.iso")
+files=($(find ~/ -type f -name "*.iso" -o -type d -name ".*.iso" | sort))
 
 echo ""
 echo "Select a file:"
@@ -44,4 +44,5 @@ done
 
 echo "Wait..."
 
-sudo dd if=${file} of=/dev/${usbdrive} bs=4M status=progress && sync
+sudo dd if="${file}" of="/dev/${usbdrive}" bs=4M status=progress && sync
+
