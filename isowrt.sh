@@ -23,7 +23,7 @@ select file in "${files[@]}"; do
     fi
 done
 
-# echo ""
+echo ""
 
 sleep 0.5
 
