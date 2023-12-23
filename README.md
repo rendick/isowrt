@@ -8,6 +8,8 @@ Easy way to burn a bootable flash drive with ISO.
 
 # Install
 
+**Recommended**
+
 ```bash
 git clone https://github.com/rendick/isowrt.git
 cd isowrt
@@ -15,8 +17,7 @@ chmod +x isowrt.sh
 ./isowrt.sh
 ```
 
-**or**
-
+or
 
 ```bash
 git clone https://github.com/rendick/isowrt.git
