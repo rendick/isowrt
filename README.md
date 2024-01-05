@@ -17,15 +17,6 @@ chmod +x isowrt.sh
 ./isowrt.sh
 ```
 
-or
-
-```bash
-git clone https://github.com/rendick/isowrt.git
-cd isowrt
-chmod +x install.sh
-./install.sh
-```
-
 # TODO
 
 Add PKGBUILD for Arch Linux-like distros
