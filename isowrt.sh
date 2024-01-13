@@ -33,7 +33,7 @@ function usb() {
     echo ""
     read -p "Enter your USB drive name: " usbdrive
     echo ""
-    read -e -p "Your flash drive: /dev/${usbdrive}/ (y or n) " choice
+    read -e -p "Your flash drive: /dev/${usbdrive} (y or n) " choice
 }
 
 usb
@@ -48,4 +48,5 @@ done
 
 echo "Wait..."
 
-sudo dd if="${file}" of="/dev/${usbdrive}" bs=4M status=progress && sync
+# sudo dd if="${file}" of="/dev/${usbdrive}" bs=4M && sync
+pv -ptearb ${file} | dd iflag=fullblock of=/dev/${usbdrive} bs=4M
