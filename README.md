@@ -4,7 +4,7 @@ Easy way to burn a bootable flash drive with ISO.
 
 # Available OS
 
-**All UNIX systems are supported.**
+**UNIX systems with preinstalled GNU coreutils are supported.**
 
 # Install
 
@@ -19,7 +19,7 @@ chmod +x isowrt.sh
 
 # TODO
 
-Add PKGBUILD for Arch Linux-like distros
+- [x] Make an installation script
 
 # License
 
