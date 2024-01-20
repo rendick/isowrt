@@ -17,6 +17,9 @@ chmod +x isowrt.sh
 ./isowrt.sh
 ```
 
+### depen
+```pv```
+
 # TODO
 
 - [x] Make an installation script
